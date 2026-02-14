@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PortFolio</title>
+</head>
+<header class="flex justify-between items-center p-6 bg-black text-white sticky top-0 z-50 shadow">
+  
+  <a href="#" class="logo text-2xl font-bold">
+    Port<span class="text-pink-600">Folio</span>
+  </a>
+
+  <button id="menuBtn" class="md:hidden text-3xl">
+    ☰
+  </button>
+
+  <nav id="menu" class="hidden md:flex">
+    <ul class="flex flex-col md:flex-row md:space-x-6 text-xl mt-6 md:mt-0">
+      <a href="accueil.html" class="block py-2 hover:text-red-600">Accueil</a>    
+      <a href="formation.html" class="block py-2 hover:text-red-500">Formation</a>
+      <a href="experiencepro.html" class="block py-2 hover:text-red-600">Experiences</a>
+      <a href="competences.html" class="block py-2 hover:text-red-600">Competences</a> 
+      <a href="projet.html" class="block py-2 hover:text-red-600">Projets</a>                                  
+      <a href="contact.html" class="block py-2 hover:text-red-600">Contact</a>
+      <a href="reseau.html" class="block py-2 hover:text-red-600">Reseaux</a>
+    </ul>
+  </nav>
+
+</header>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+<body class="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    
+    <div class="flex justify-end grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <img src="je-veux-un-logo-informatique-tr-s-professionnel-et-removebg-preview.png" class="w-32 h-32  hover:scale-125 transition-transform duration-100" alt="">
+    </div >
+     <div class="header-content">
+        <div class="text">
+            <h2 class="font-bold text-4xl">Salut c'est <span class="text-4xl font-black leading-none uppercas"> MOUHAMED DIOP</span></h2>
+            <h1 class="font-bold">Je suis etudiant</h1>
+            <h2>à Univers Professionnel</h2>
+            <div class=" mt-8">
+            <a href="Mon CV.pdf" download  class=" text-center mt-10 w-80 py-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 text-black font-bold hover:scale-110 transition duration-500 shadow-xl">Télécharger Mon CV</a>
+            </div>
+        </div>
+     </div>
+<section class="about w-full flex flex-col md:flex-row items-center justify-between px-6">
+<div class="absolute md:fixed inset-0 -z-10">
+  <img src="WhatsApp Image 2026-02-05 at 21.03.41.jpeg" alt="Background" class="w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-gray-100/50 to-gray-100"></div>
+</div>
+<div class="about-text mt-16 text-center md:text-left">
+<h2 class="text-2xl font-black leading-none uppercas font-poppins">A propos de moi</h2>
+        <h1 class="pt-4 font-bold ">Etudiant Developpeur Frontend</h1>
+        <p class="pt-8 font-mono">
+          Mouhamed Diop, étudiant en L2 Génie Informatique à Univers Professionnel <br> j'ai 23ans. Et je suis
+             passionné de l'Informatiques plus particulier développement web <br>et infographisme. Etant en L2 j'ai eu à réaliser
+              des projets que j'ai l'honneur de <br> vous les présentes par la suite.
+        </p>
+        </div>
+     </section>
+       <h1 class=" mt-8 flex justify-center text-2xl font-black leading-none uppercas font-poppins">Presentation</h1>
+   <p class="text-center font-mono">Etudiant en L2 Génie Informatique à Univers Professionnel.J'habite à Sacré Coeur 3 .<br>J'ai eu mon bac en S2(science experimental)</p>
+       <div class=" flex justify-center mt-8">
+              <a href="voirplus.html" class=" text-center mt-10 w-60 py-4 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 text-black font-bold hover:scale-110 transition duration-500 shadow-2xl">Voir plus</a>
+             </div>
+      <section  class="bg-black text-gray-300 py-12 mt-16" id="contact">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="title text-pink-600 font-bold text-4xl text-center">Contactez-moi</h2>
+    <div class="bg-black rounded-2xl shadow-lg p-8 md:p-12">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-sm font-semibold mb-2">Nom</label>
+          <input type="text" placeholder="Votre nom"
+                 class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-2">Email</label>
+          <input type="email" placeholder="Votre email"
+                 class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-semibold mb-2">Sujet</label>
+          <input type="text" placeholder="Sujet du message"
+                 class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-semibold mb-2">Message</label>
+          <textarea rows="5" placeholder="Votre message"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+        </div>
+        <div class="md:col-span-2 text-center">
+          <button type="submit"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-lg transition">
+            Envoyer le message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="bg-gray-800 text-gray-300">
+  <p class="text-sm">📍 Sacre Coeur,Dakar,Sénégal</p>
+   <p class="text-sm">📞 +221 77 926 99 04</p>
+   <div class="icons text-2xl">
+        <a href="https://www.instagram.com/mhd88_33?igsh=ejEweXVscWNyeWRm&utm_source=qr">
+                <i class='bx bxl-instagram transition hover:text-pink-700'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mouhamed-diop-3b459a3a9">
+                    <i class='bx bxl-linkedin transition hover:text-pink-500'></i>
+                </a>
+                <a href="www.tiktok.com/@mouhameddiop7721">
+                <i class='bx bxl-tiktok transition hover:text-pink-700'></i>
+                </a>
+                <a href=" https://www.youtube.com/@Momo-25diop">
+                <i class='bx bxl-youtube transition hover:text-pink-700'></i>
+                </a>
+                </div>
+                   <h2 class="text-3xl font-bold text-gray-300 mb-4 text-center text-sm">Merci de votre visite !</h2>
+                    <p class="text-gray-400 text-center text-sm">N'hésitez pas à me contacter pour toute collaboration ou opportunité.</p>
+                    <i class="devicon-c-plain text-5xl text-blue-600"></i>
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center">
+      © 2026 - PortFolio
+    </div>
+  </footer>
+</body>
+</html>
